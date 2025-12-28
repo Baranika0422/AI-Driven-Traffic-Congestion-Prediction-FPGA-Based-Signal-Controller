@@ -15,13 +15,11 @@ This project presents a hybrid AI + FPGA intelligent traffic management system t
 
 model_east.h5, model_west.h5, model_south.h5, model_north.h5 – Trained CNN–LSTM congestion prediction model
 
-sumo_simulation_files/ – Traffic scenarios and route definitions
+sumo_verilog_integration.py – ml prediction and traffic controller integration
 
-fpga_traffic_controller.v – Verilog FSM-based traffic signal controller
+ml_new.py - ml preciction for direction wise conjestion
 
-uart_interface.v – ML-to-FPGA communication module
-
-testbench.v – FPGA simulation and verification
+directional_traffic_controller.v – Verilog FSM-based traffic signal controller
 
 directional_traffic_data.csv – Extracted traffic features
 
@@ -43,7 +41,7 @@ Machine Learning: TensorFlow, Keras, NumPy, Pandas
 
 Traffic Simulation: SUMO (Simulation of Urban Mobility)
 
-Hardware Design: Verilog HDL, Yosys (synthesis), GTKWave
+Hardware Design: Verilog HDL (Icarus Verilog), Yosys (synthesis), GTKWave
 
 Communication: UART protocol
 

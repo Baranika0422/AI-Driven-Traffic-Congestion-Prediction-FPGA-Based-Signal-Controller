@@ -13,7 +13,7 @@ This project presents a hybrid AI + FPGA intelligent traffic management system t
 
 ****Project Files****
 
-cnn_lstm_model.py / .h5 – Trained CNN–LSTM congestion prediction model
+model_east.h5, model_west.h5, model_south.h5, model_north.h5 – Trained CNN–LSTM congestion prediction model
 
 sumo_simulation_files/ – Traffic scenarios and route definitions
 
